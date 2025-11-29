@@ -3,6 +3,9 @@
 ============================ */
 
 /* Navbar Container */
+#navbar{
+    overflow: hidden;
+}
 .navbar-sonic {
     position: fixed;
     top: 0;
@@ -304,7 +307,9 @@
 /* ============================
    Hero 
 ============================ */
-
+#hero{
+    overflow: hidden;
+}
 .hero-section {
     position: relative;
     padding-top: 180px;
@@ -1800,6 +1805,9 @@ Our Work
 /* ============================
     Pricing
 ============================ */
+#padraPricing{
+    overflow: hidden;
+}
 .padraPricing .background {
     padding: 0 25px 25px;
     position: relative;
@@ -1949,6 +1957,10 @@ Our Work
 ============================ */
 
 /* Subtle Background Decoration */
+#cta-section {
+    overflow: hidden;
+}
+
 .cta-section {
     padding: 100px 0;
 }
@@ -1979,6 +1991,9 @@ Our Work
 /* ============================
     Footer
 ============================ */
+.footer-sonic {
+    overflow: hidden;
+}
 .footer-links a:hover {
     color: var(--color-primary);
 }
