@@ -1,0 +1,80 @@
+/* ============================
+   Mobile Overflow Fixes
+============================ */
+
+/* Fix navbar overflow */
+#navbar {
+    overflow-x: hidden;
+}
+
+/* Fix hero overflow */
+#hero {
+    overflow-x: hidden;
+}
+
+/* Navbar Mobile Adjustments */
+@media (max-width: 768px) {
+    .navbar-sonic {
+        padding: var(--spacing-sm) 0;
+    }
+
+    .brand-logo-img {
+        height: 50px;
+    }
+
+    .nav-wrapper {
+        padding: 0 var(--spacing-sm);
+    }
+}
+
+@media (max-width: 576px) {
+    .brand-logo-img {
+        height: 40px;
+    }
+}
+
+/* Hero Section Tablet Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding-top: 140px;
+        padding-bottom: 60px;
+    }
+
+    .hero-section::before {
+        width: 500px;
+        height: 500px;
+        top: -10%;
+        right: -20%;
+    }
+
+    .hero-content {
+        padding-right: var(--spacing-md);
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+}
+
+/* Hero Section Mobile Enhancements */
+@media (max-width: 576px) {
+    .hero-section {
+        padding-top: 120px;
+        padding-bottom: 40px;
+    }
+
+    .hero-section::before {
+        width: 300px;
+        height: 300px;
+        top: 0;
+        right: -30%;
+    }
+
+    .hero-content {
+        padding-right: 0;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+}
