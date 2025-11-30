@@ -3,9 +3,10 @@
 ============================ */
 
 /* Navbar Container */
-#navbar{
+#navbar {
     overflow: hidden;
 }
+
 .navbar-sonic {
     position: fixed;
     top: 0;
@@ -307,9 +308,10 @@
 /* ============================
    Hero 
 ============================ */
-#hero{
+#hero {
     overflow: hidden;
 }
+
 .hero-section {
     position: relative;
     padding-top: 180px;
@@ -1805,9 +1807,10 @@ Our Work
 /* ============================
     Pricing
 ============================ */
-#padraPricing{
+#padraPricing {
     overflow: hidden;
 }
+
 .padraPricing .background {
     padding: 0 25px 25px;
     position: relative;
@@ -1993,6 +1996,7 @@ Our Work
 .footer-sonic {
     overflow: hidden;
 }
+
 .footer-links a:hover {
     color: var(--color-primary);
 }
@@ -2393,6 +2397,42 @@ Our Work
 }
 
 /* ============================
+   Meeting Button
+============================ */
+.meeting-button {
+    position: fixed;
+    bottom: 160px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: var(--color-primary);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    box-shadow: 0 4px 12px rgba(0, 162, 255, 0.3);
+    transition: all 0.3s ease;
+    z-index: 999;
+    text-decoration: none;
+}
+
+.meeting-button:hover {
+    background: var(--color-hover-primary);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 162, 255, 0.4);
+    color: #fff;
+    text-decoration: none;
+}
+
+.meeting-button:active {
+    transform: translateY(-1px) scale(1.05);
+}
+
+/* ============================
    WhatsApp Contact Button
 ============================ */
 .whatsapp-button {
@@ -2470,8 +2510,16 @@ Our Work
     transform: translateY(-1px);
 }
 
-/* Responsive adjustments for both buttons */
+/* Responsive adjustments for all buttons */
 @media (max-width: 768px) {
+    .meeting-button {
+        bottom: 150px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+    }
+
     .whatsapp-button {
         bottom: 85px;
         right: 20px;
@@ -2487,4 +2535,184 @@ Our Work
         height: 45px;
         font-size: 1rem;
     }
+}
+
+/* Social Icons */
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links {
+    list-style: square;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #F8F9FA;
+    color: var(--color-text-secondary);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    background-color: var(--color-primary);
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Locations */
+.location-block {
+    margin-bottom: var(--spacing-md);
+}
+
+.location-title {
+    font-family: var(--font-secondary);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.location-title i {
+    color: var(--color-primary);
+    font-size: 1rem;
+}
+
+.location-address {
+    font-size: 0.95rem;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.location-phone {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.location-phone:hover {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    border-top: 1px solid #F5F5F5;
+}
+
+.copyright-text {
+    font-size: 0.85rem;
+    color: #999;
+    max-width: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-sonic {
+        padding: 60px 0 30px;
+        text-align: left;
+    }
+
+    .footer-brand-large {
+        font-size: 18vw;
+        /* Larger on mobile relative to width */
+        margin-bottom: var(--spacing-xl);
+    }
+
+    .footer-heading {
+        margin-top: var(--spacing-md);
+        margin-bottom: var(--spacing-md);
+    }
+
+    .location-block {
+        margin-bottom: var(--spacing-lg);
+    }
+}
+
+
+
+/* CTA WRAPPER */
+.cta-wrapper {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* PRIMARY CTA */
+.primary-cta,
+.secondary-cta {
+    display: inline-block;
+    padding: 14px 26px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.primary-cta {
+    background-color: #fff;
+    color: #000;
+}
+
+.secondary-cta {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    color: #fff;
+}
+
+/* HOVER EFFECTS */
+.primary-cta:hover,
+.secondary-cta:hover {
+    transform: scale(1.05);
+}
+
+.secondary-cta:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* LOCATION PINS STYLES */
+.location-pins {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    z-index: 2;
+}
+
+.pin {
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.pin img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.location-label {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.pin p {
+    font-size: 0.9rem;
+    margin-top: 5px;
 }
